@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 /**
  *
@@ -19,12 +20,15 @@ import javafx.scene.control.Label;
 public class FXMLDocumentController implements Initializable {
     
     @FXML
-    private Label label;
+    private Label resultado;
+    @FXML
+    private TextField num1;
+    @FXML
+    private TextField num2;
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+        resultado.setText(String.valueOf(Double.parseDouble(num1.getText()) + Double.parseDouble(num2.getText())));
     }
     
     @Override
