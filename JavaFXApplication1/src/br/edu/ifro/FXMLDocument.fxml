@@ -6,12 +6,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="231.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="javafxapplication1.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="194.0" prefWidth="231.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.FXMLDocumentController">
     <children>
-        <Button fx:id="button" layoutX="86.0" layoutY="100.0" onAction="#handleButtonAction" text="Calcular" />
-        <Label fx:id="label" layoutX="41.0" layoutY="139.0" minHeight="16" minWidth="69" text="Resultado:" />
-      <Label fx:id="resultado" layoutX="115.0" layoutY="139.0" minHeight="16" minWidth="69" />
-      <TextField fx:id="num2" layoutX="41.0" layoutY="66.0" promptText="num2" />
-      <TextField fx:id="num1" layoutX="41.0" layoutY="29.0" promptText="num1" />
+        <Button fx:id="button" layoutX="86.0" layoutY="129.0" onAction="#handleButtonAction" text="Calcular" />
+        <Label fx:id="label" layoutX="41.0" layoutY="168.0" minHeight="16" minWidth="69" text="Resultado:" />
+      <Label fx:id="resultado" layoutX="115.0" layoutY="168.0" minHeight="16" minWidth="69" />
+      <TextField fx:id="num2" layoutX="41.0" layoutY="95.0" promptText="num2" />
+      <TextField fx:id="num1" layoutX="41.0" layoutY="58.0" promptText="num1" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="231.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAlunos" text="Alunos" />
+              <MenuItem mnemonicParsing="false" onAction="#fechar" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>

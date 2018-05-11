@@ -5,9 +5,12 @@
  */
 package br.edu.ifro.modelo;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Persistence;
 
 /**
  *
